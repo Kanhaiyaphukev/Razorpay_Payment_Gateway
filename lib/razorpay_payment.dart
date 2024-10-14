@@ -136,7 +136,7 @@ class _RazorPayPageState extends State<RazorPayPage> {
               padding: EdgeInsets.all(8.0),
               child: Text('Make Payment'),
             ),
-            style: ElevatedButton.styleFrom(primary: Colors.green),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
           ),
         ]),
       ),

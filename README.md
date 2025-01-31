@@ -1,16 +1,16 @@
-# razorpay_payment_gateway_ug
+# Pay Now App 🚀 (Beta Pre-release)
 
-A new Flutter project.
+**Pay Now** is a payment module powered by **Razorpay**, integrating API-based transactions with basic features.
 
-## Getting Started
+## 🔹 Features
+- Seamless **Razorpay API** integration
+- Secure and fast payments
+- Lightweight and easy to use
 
-This project is a starting point for a Flutter application.
+## 🔹 Installation
+Clone the repository or Download Pre-release Apk.
 
-A few resources to get you started if this is your first Flutter project:
+## 🔹 Beta Version - Feedback Welcome!
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Let me know if you need any modifications! 🚀🔥
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

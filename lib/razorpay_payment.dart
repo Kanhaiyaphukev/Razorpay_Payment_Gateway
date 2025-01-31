@@ -18,7 +18,7 @@ class RazorPayPageState extends State<RazorPayPage> {
     var options = {
       'key': 'rzp_test_1DP5mmOlF5G5ag',
       'amount': amount,
-      'Name': 'Travelgeek_x_',
+      'Name': 'Payment For Travelgeek',
       'prefill': {'contact': '8830314380', 'email': 'test@razorpay.com'},
       'external': {
         'wallets': ['paytm']
@@ -67,49 +67,55 @@ class RazorPayPageState extends State<RazorPayPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(children: [
-          SizedBox(height: 100,),
-          Image.network(
-            'https://yt3.googleusercontent.com/ilKjcoyCM0NuVNHvDK7fI6sNe1DxAEkRzBe10GjwC3XQ5wV2I-GbLLLfKGw72vxkT61eeKrnig=s176-c-k-c0x00ffffff-no-rj',
-            height: 100,
-            width: 300,
+          SizedBox(
+            height: 121,
+          ),
+          Image.asset(
+            "assets/Integration icon.jpg",
+            height: 150,
+            width: 150,
           ),
           SizedBox(
             height: 10,
           ),
-          Text('Welcome to Razorpay Payment Gateway',
+          Text('Welcome to Pay Now',
               style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
-                  fontSize: 18),
+                  fontSize: 25),
               textAlign: TextAlign.center),
+          Text('Powered by Razorpay',
+              style: TextStyle(color: Colors.grey, fontSize: 12)),
           SizedBox(
-            height: 30,
+            height: 105,
           ),
           Padding(
-            padding: EdgeInsets.all(8.0),
-            child:TextFormField(
-              cursorColor: Colors.white,
+            padding: EdgeInsets.all(28),
+            child: TextFormField(
+              cursorColor: Colors.black,
               autofocus: false,
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.black),
               decoration: InputDecoration(
-                labelText: 'Enter Amount To Be Paid',
-                labelStyle: TextStyle(fontSize: 15.0, color: Colors.white),
+                labelText: 'Enter Amount To Pay',
+                labelStyle: TextStyle(fontSize: 17, color: Colors.black),
                 border: OutlineInputBorder(
                     borderSide: BorderSide(
-                  color: Colors.white,
+                  color: Colors.black,
                   width: 1.0,
                 )),
                 enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
-                  color: Colors.white,
+                  color: Colors.black,
                   width: 1.0,
                 )),
-                errorStyle: TextStyle(color: Colors.redAccent, fontSize: 15),
+                errorStyle: TextStyle(color: Colors.greenAccent, fontSize: 15),
               ),
               controller: amtController,
+              keyboardType: TextInputType.number,
               validator: (value) {
                 if (value == null || value.isEmpty) {
                   return 'Please Enter Amount To Be Paid';
@@ -130,10 +136,13 @@ class RazorPayPageState extends State<RazorPayPage> {
                 });
               }
             },
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
             child: Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text('Make Payment'),
+              child: Text(
+                'Pay Now',
+                style: TextStyle(color: Colors.white, fontSize: 17),
+              ),
             ),
           ),
         ]),

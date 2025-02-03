@@ -1,0 +1,15 @@
+# Force Dart as the primary language
+*.dart linguist-detectable=true
+
+# Ignore other file types from language stats
+*.lock linguist-detectable=false
+*.yaml linguist-detectable=false
+*.json linguist-detectable=false
+*.md linguist-detectable=false
+*.sh linguist-detectable=false
+
+# Ignore platform-specific folders (Flutter projects)
+android/** linguist-vendored
+ios/** linguist-vendored
+build/** linguist-vendored
+web/** linguist-vendored

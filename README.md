@@ -1,4 +1,4 @@
-# Pay Now App 🚀 (Beta Pre-release)
+# Pay Now App 🚀 (Pre-release)
 
 **Pay Now** is a payment module powered by **Razorpay**, integrating API-based transactions with basic features.
 

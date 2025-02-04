@@ -12,5 +12,5 @@ Clone the repository or Download Pre-release Apk.
 
 ## 🔹 Beta Version - Feedback Welcome!
 
-Let me know if you need any modifications! 🚀🔥
+Let me know if you need any modifications!🚀🔥
 
